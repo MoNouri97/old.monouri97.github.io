@@ -1,0 +1,14 @@
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h2 class="text-sm title-font text-gray-500 tracking-widest">SEE</h2>
+    <h1 class="mb-5 text-gray-900 text-3xl title-font font-medium mb-1">
+      My Projects
+    </h1>
+    <div class="flex flex-wrap -m-4">
+      <app-card
+        class="lg:w-1/4 md:w-1/2 p-4 w-full"
+        *ngFor="let item of list"
+      ></app-card>
+    </div>
+  </div>
+</section>
