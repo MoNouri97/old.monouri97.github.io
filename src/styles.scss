@@ -4,3 +4,44 @@ body,
 html {
   font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.shadowed {
+  filter: drop-shadow(2px 2px 1px rgb(139, 139, 139));
+  filter: saturate(0);
+  opacity: 0.4;
+  transition: all 0.1s ease;
+  &:hover {
+    filter: saturate(1);
+  }
+}
+.a-pop {
+  --transform-scale-y: 0;
+  --transform-scale-x: 0;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.a-pop-active {
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --transform-scale-y: 1;
+  --transform-scale-x: 1;
+}
+
+.a-scale {
+  transition: transform 0.4s ease-out;
+  transform: scale(0);
+
+  &-active {
+    transition: transform 0.4s ease-out;
+    transform: scale(1);
+  }
+}
+.a-slide {
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  opacity: 0;
+  transform: translateX(-50px);
+
+  &-active {
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

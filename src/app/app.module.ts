@@ -11,6 +11,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CardComponent } from './projects/card/card.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { ParallaxDirective } from './shared/parallax.directive';
+import { AosDirective } from './shared/aos.directive';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,12 @@ import { ContactComponent } from './contact/contact.component';
     ProjectsComponent,
     CardComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    ParallaxDirective,
+    AosDirective,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

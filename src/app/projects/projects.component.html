@@ -1,4 +1,4 @@
-<section class="text-white body-font bg-teal-500 px-40">
+<section class="text-white body-font bg-teal-500 xl:px-40 md:px-10">
   <div class="container px-5 py-24 mx-auto">
     <h2 class="text-sm px-8 title-font text-white tracking-widest">SEE</h2>
     <h1 class="mb-5 px-8 text-white text-3xl title-font font-medium mb-1">
@@ -6,8 +6,11 @@
     </h1>
     <div class="flex flex-wrap">
       <app-card
-        class="lg:w-1/3 md:w-1/2 p-8 w-full"
-        *ngFor="let item of list"
+        appAos
+        [aos]="'a-scale'"
+        class="transform lg:w-1/3 md:w-1/2 p-8 w-full"
+        *ngFor="let project of projectsList"
+        [project]="project"
       ></app-card>
     </div>
   </div>
