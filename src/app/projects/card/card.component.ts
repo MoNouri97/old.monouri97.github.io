@@ -9,7 +9,5 @@ export class CardComponent implements OnInit {
   @Input() project;
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.project);
-  }
+  ngOnInit(): void {}
 }
