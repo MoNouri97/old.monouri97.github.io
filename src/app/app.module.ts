@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ParallaxDirective } from './shared/parallax.directive';
 import { AosDirective } from './shared/aos.directive';
+import { SkillsComponent } from './skills/skills.component';
+import { SkillComponent } from './skills/skill/skill.component';
+import { SocialIconsComponent } from './footer/social-icons/social-icons.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +31,11 @@ import { AosDirective } from './shared/aos.directive';
     ContactComponent,
     ParallaxDirective,
     AosDirective,
+    SkillsComponent,
+    SkillComponent,
+    SocialIconsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -8,10 +8,15 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
+@media only screen and (max-width: 768px) {
+  .shadowed {
+    display: none;
+  }
+}
 .shadowed {
   filter: drop-shadow(2px 2px 1px rgb(139, 139, 139));
   filter: saturate(0);
-  opacity: 0.4;
+  opacity: 0.2;
   transition: all 0.1s ease;
   &:hover {
     filter: saturate(1);

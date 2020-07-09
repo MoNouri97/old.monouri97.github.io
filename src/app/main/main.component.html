@@ -1,10 +1,11 @@
 <app-navbar></app-navbar>
-<app-header></app-header>
+<app-header (btnClicked)="scrollTo($event)"></app-header>
 
-<app-projects></app-projects>
-<app-about></app-about>
+<app-projects #pSection></app-projects>
+<app-about (btnClicked)="scrollTo($event)"></app-about>
+<app-skills></app-skills>
 
-<app-contact></app-contact>
+<app-contact #cSection></app-contact>
 <div class="wrapper">
   <div class="custom-shape-divider-top-1594304708">
     <svg

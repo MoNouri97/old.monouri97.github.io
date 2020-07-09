@@ -1,0 +1,22 @@
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="text-center mb-20">
+      <h1
+        class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
+      >
+        Key Skills
+      </h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+        these are the skills and knowledge that acquired from my education and
+        the projects I did, along with my hobbies and personal interests
+      </p>
+    </div>
+    <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      <app-skill
+        class="p-2 sm:w-1/2 w-full"
+        *ngFor="let skill of skills"
+        [skill]="skill"
+      ></app-skill>
+    </div>
+  </div>
+</section>

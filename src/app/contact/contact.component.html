@@ -1,4 +1,4 @@
-<section class="text-gray-700 body-font bg-gray-100">
+<section #cSection class="text-gray-700 body-font bg-gray-100">
   <div
     class="container mx-auto flex xl:px-20 py-24 mx-auto flex-col lg:flex-row"
   >
@@ -14,25 +14,34 @@
       [aos]="'a-slide'"
       class="transform contact-form w-full lg:w-1/2 bg-white shadow-lg rounded p-8 flex flex-col md:ml-auto mt-10 md:mt-0 relative z-10"
     >
-      <h2 class="text-gray-900 sm:text-4xl mb-1 font-bold title-font mb-10">
-        Say Hi 👋
-      </h2>
-      <label class="mt-5 mb-2" for="eamil">Email</label>
-      <input
-        class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
-        type="email"
-        name="email"
-      />
-      <label class="mt-5 mb-2" for="message">Message</label>
-      <textarea
-        class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
-        name="message"
-      ></textarea>
-      <button
-        class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+      <form
+        #form="ngForm"
+        (ngSubmit)="onSubmit(form)"
+        class="w-full flex flex-col"
       >
-        Send
-      </button>
+        <h2 class="text-gray-900 sm:text-4xl mb-1 font-bold title-font mb-10">
+          Say Hi 👋
+        </h2>
+        <label class="mt-5 mb-2" for="subject">Subject</label>
+        <input
+          class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+          type="subject"
+          name="subject"
+          [(ngModel)]="email.subject"
+        />
+        <label class="mt-5 mb-2" for="message">Message</label>
+        <textarea
+          class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+          name="message"
+          [(ngModel)]="email.message"
+        ></textarea>
+        <button
+          type="submit"
+          class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        >
+          Send
+        </button>
+      </form>
     </div>
   </div>
 </section>
