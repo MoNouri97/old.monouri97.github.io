@@ -143,8 +143,13 @@
               "devServerTarget": "tailwind-portfolio:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "tailwind-portfolio"
 }
