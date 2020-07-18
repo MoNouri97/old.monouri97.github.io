@@ -53,3 +53,14 @@ button {
     transform: translateX(0px);
   }
 }
+.a-slideUp {
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  opacity: 0;
+  transform: translateY(50px);
+
+  &-active {
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
