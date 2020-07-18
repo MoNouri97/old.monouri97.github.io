@@ -33,7 +33,8 @@ export class ProjectsComponent {
       'Angular Notes',
       ['FrontEnd', 'BulmaCSS', 'Angular'],
       'https://github.com/MoNouri97/angular-notes',
-      'https://raw.githubusercontent.com/MoNouri97/angular-notes/master/screenshots/thumb.png'
+      'https://raw.githubusercontent.com/MoNouri97/angular-notes/master/screenshots/thumb.png',
+      'https://monouri97.github.io/angular-notes/'
     ),
     new Project(
       'TopDown Shooter',
