@@ -59,6 +59,12 @@ export class ProjectInfoService {
       screenshot:
         'https://raw.githubusercontent.com/MoNouri97/laravelWebProoject/master/Screenshots/1.png',
     },
+    {
+      name: 'Portfolio',
+      tags: ['Web', 'Angular', 'TailwindCss'],
+      code: 'https://github.com/MoNouri97/angular_portfolio',
+      screenshot: '../../assets/img/banner/undraw_dev_productivity_umsq.png',
+    },
   ];
   constructor() {}
 
