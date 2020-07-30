@@ -17,9 +17,9 @@ export class ProjectInfoService {
     {
       name: 'Pharmatek',
       tags: ['NodeJs', 'React', 'MongoDb'],
-      code: 'https://gitlab.com/fbenkhlifa/pharmatek/-/tree/develop',
+      code: 'https://gitlab.com/mohamed.nouri.1997/pharmatek/-/tree/develop',
       screenshot:
-        'https://gitlab.com/fbenkhlifa/pharmatek/-/raw/develop/screenshots/Screenshot1.png',
+        'https://gitlab.com/mohamed.nouri.1997/pharmatek/-/raw/develop/screenshots/Screenshot1.png',
     },
     {
       name: 'Angular Boards',
@@ -28,6 +28,14 @@ export class ProjectInfoService {
       screenshot:
         'https://raw.githubusercontent.com/MoNouri97/angular-boards/develop/screenshots/thumb.png',
       preview: 'https://boards-trello-clone.web.app/',
+    },
+    {
+      name: 'Messenger',
+      tags: ['React', 'Firebase'],
+      code: 'https://github.com/MoNouri97/messenger-clone',
+      screenshot:
+        'https://raw.githubusercontent.com/MoNouri97/messenger-clone/master/images/image1.png',
+      preview: 'https://messenger-clone-nouri.web.app/',
     },
     {
       name: 'React Notes',
