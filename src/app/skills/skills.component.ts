@@ -14,7 +14,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       title: 'Back-End Servers',
-      desc: 'NodeJs , PHP , Laravel , Symphony , JEE , .NetCore',
+      desc: 'NodeJs , PHP , Laravel , Symphony , .NetCore',
     },
     {
       title: 'Databases',
@@ -30,7 +30,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       title: 'Other',
-      desc: 'Unity3D , Blender , GIMP , Photoshop , AfterEffect, Premiere ',
+      desc: 'Godot , Unity3D , Blender , Photoshop , AfterEffect ',
     },
   ];
   constructor() {}
