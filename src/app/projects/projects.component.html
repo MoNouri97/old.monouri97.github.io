@@ -11,8 +11,10 @@
       <span
         class="inline-block p-1 mr-1 mb-1 rounded text-sm font-medium border-2 border-teal-200 transition-all tracking-widest hover:bg-teal-500 hover:text-teal-200 cursor-pointer"
         *ngFor="let tag of tags"
-        [ngClass]="{ 'bg-teal-500 ': tag.name === activeTag }"
-        [ngClass]="{ 'bg-teal-200  text-teal-500 ': tag !== activeTag }"
+        [ngClass]="{
+          'bg-teal-500 ': tag.name === activeTag,
+          'bg-teal-200  text-teal-500 ': tag.name !== activeTag
+        }"
         (click)="setActive(tag.name)"
       >
         {{ tag.name }}({{ tag.number }})
