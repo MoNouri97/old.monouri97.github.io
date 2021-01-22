@@ -7,6 +7,7 @@ import { Skill } from '../shared/Skill';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
+  stack = ['Typescript', 'Nodejs', 'React (NextJs)', 'PostgreSQL'];
   skills: Skill[] = [
     {
       title: 'Front-End',
@@ -14,7 +15,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       title: 'Back-End Servers',
-      desc: 'NodeJs , PHP , Laravel , Symphony , .NetCore',
+      desc: 'NodeJs , PHP , Laravel , Symphony , .NetCore, SpringBoot',
     },
     {
       title: 'Databases',

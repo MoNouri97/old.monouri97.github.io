@@ -41,7 +41,7 @@ export class ProjectInfoService {
       tags: ['ReactNative', 'Mobile'],
       code: 'https://github.com/MoNouri97/IssatTimes',
       screenshot:
-        'https://github.com/MoNouri97/IssatTimes/blob/master/assets/Screenshot_20201207-222454_Expo.jpg?raw=true',
+        'https://github.com/MoNouri97/IssatTimes/blob/master/assets/img05.jpg?raw=true',
       preview: 'https://expo.io/@monouri/projects/IssatTimes',
     },
     {
