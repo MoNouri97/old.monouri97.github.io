@@ -25,6 +25,10 @@ jobs:
         with:
           node-version: 14
 
+        # publish to a branch in current repo using GITHUB_TOKEN and other default settings
+      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
       # Runs a set of commands using the runners shell
       - run: chmod +x deploy.sh
       - run: npm install
