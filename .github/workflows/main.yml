@@ -26,5 +26,6 @@ jobs:
           node-version: 14
 
       # Runs a set of commands using the runners shell
+      - run: chmod +x deploy.sh
       - run: npm install
       - run: npm run deploy
