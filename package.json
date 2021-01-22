@@ -4,12 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href \"https://monouri97.github.io\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "./deploy.sh",
-    "predeploy": "ng build"
+    "deploy": "npx angular-cli-ghpages --dir=\"dist/tailwind-portfolio\""
   },
   "private": true,
   "dependencies": {
