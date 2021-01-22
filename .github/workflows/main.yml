@@ -24,12 +24,20 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-
-        # publish to a branch in current repo using GITHUB_TOKEN and other default settings
-      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
-        with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
-      # Runs a set of commands using the runners shell
-      - run: chmod +x deploy.sh
+      # - run: chmod +x deploy.sh
       - run: npm install
-      - run: npm run deploy
+      - run: npm run build
+
+      - name: deploy
+        uses: actions/checkout@v2
+        with:
+          repository: dist/tailwind-portfolio/
+          path: dist
+      - run: |
+          git init
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git remote add origin-deploy git@github.com:MoNouri97/MoNouri97.github.io.git
+          git add .
+          git commit -m "new update"
+          git push -uf origin-deploy master
