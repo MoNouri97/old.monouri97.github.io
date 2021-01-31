@@ -15,7 +15,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       title: 'Back-End Servers',
-      desc: 'NodeJs , PHP , Laravel , Symphony , .NetCore, SpringBoot',
+      desc: 'NodeJs , PHP , Laravel , Symfony , .NetCore, SpringBoot',
     },
     {
       title: 'Databases',
